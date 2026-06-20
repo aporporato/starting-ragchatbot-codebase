@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Python / backend (out of scope for frontend tooling)
+backend/
+.venv/
+__pycache__/
+
+# Data & build artifacts
+chroma_db/
+backend/chroma_db/
+uploads/
+
+# Docs & misc
+docs/
+*.md

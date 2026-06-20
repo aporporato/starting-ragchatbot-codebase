@@ -14,9 +14,15 @@ venv/
 env/
 ENV/
 
+# Node / frontend tooling
+node_modules/
+
 # ChromaDB
 backend/chroma_db/
 chroma_db/
+
+# Git worktrees
+.trees/
 
 # Uploads
 uploads/

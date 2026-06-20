@@ -1,0 +1,14 @@
+{
+  "name": "ragchatbot-frontend-tooling",
+  "version": "1.0.0",
+  "description": "Frontend code quality tooling (Prettier) for the Course Materials Assistant UI.",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"frontend/**/*.{js,css,html}\"",
+    "format:check": "prettier --check \"frontend/**/*.{js,css,html}\"",
+    "quality": "npm run format:check"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
