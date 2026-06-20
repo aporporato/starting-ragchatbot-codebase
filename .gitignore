@@ -36,3 +36,6 @@ uploads/
 # OS
 .DS_Store
 Thumbs.db
+
+# Agent workspace artifacts
+.agents/
