@@ -13,3 +13,23 @@ dependencies = [
     "python-multipart==0.0.20",
     "python-dotenv==1.1.1",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "httpx>=0.27",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+python_files = ["test_*.py"]
+python_classes = ["*Test", "Test*"]
+python_functions = ["test_*"]
+# Quieter, more useful default output. -ra shows a summary of non-passing tests;
+# the underscore-prefixed _diagnose_*/ _inspect_* / _verify_* scripts are ad-hoc
+# live-environment probes, not pytest tests, so keep them out of collection.
+addopts = "-ra --tb=short --strict-markers"
+norecursedirs = ["chroma_db", "__pycache__", ".venv"]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]

@@ -32,6 +32,7 @@ class FakeConfig:
         self.CHUNK_OVERLAP = 100
         self.MAX_RESULTS = 5
         self.MAX_HISTORY = 2
+        self.MAX_TOOL_ROUNDS = 2
         self.CHROMA_PATH = chroma_path
 
 
